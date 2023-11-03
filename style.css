@@ -1,0 +1,175 @@
+*{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+
+
+/*body {
+    width:1440px
+}*/
+
+.top{
+    display: flex;
+    text-wrap: wrap;
+    justify-content: center;
+}
+
+.intro {
+    width: 50%;
+    height: 50%;
+    color: hsl(300, 43%, 22%);
+    display: flex;
+
+}
+
+.welcoming {
+    display: flex;
+    text-wrap: wrap;
+    flex-direction: column;
+}
+
+.intro h1 {
+    font-weight: 700;
+    font-size: 3em;
+}
+
+/*----------------------Rating--------------------*/
+.rating {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    text-wrap: wrap;
+}
+
+
+.reviews,
+.guru,
+.besttech {
+    height: 40px;
+    width: 330px;
+    background-color: hsl(300, 24%, 96%) ;
+    border-radius: 5px;
+    display: flex;
+}
+
+.besttech{
+    position: relative;
+    left: 60px;
+}
+
+.guru{
+    position: relative;
+    left: 30px;
+}
+
+.reviews p,
+.guru p,
+.besttech p {
+    position: relative;
+    right:-35px;
+    color: hsl(300, 43%, 22%) ;
+    font-weight: 700;
+    
+}
+
+.star{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+/*--------Customer review----------------------------------*/
+
+.customers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-wrap: wrap;
+}
+
+.smith,
+.roberts,
+.wallace {
+    height: 200px;
+    width: 300px;
+    background-color: hsl(300, 43%, 22%) ;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    gap: 30px;
+}
+
+.roberts {
+    top: 20px;
+
+}
+
+.wallace{
+    top: 40px;
+}
+
+.ver-buyer {
+    color: hsl(333, 80%, 67%);
+    
+}
+.cs-name {
+    color: white;
+   
+}
+
+.icon img {
+    border-radius: 50%;
+}
+
+.paragraph {
+    color: white;
+}
+
+/*-----------------footer--------------------*/
+.footer {
+   margin: 100px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+/*--------------responsive------------*/
+@media only screen and (max-width:375px){
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0;
+    }
+
+    .guru{
+        position: relative;
+        left: 0px;
+    }
+    
+    .besttech{
+        position: relative;
+        left: 0px;
+    }
+    .customers {
+        display: flex;
+        gap: 20px;    
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro {
+        width: 100%;
+        text-align: center;
+    }
+}
